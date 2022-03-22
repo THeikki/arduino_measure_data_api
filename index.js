@@ -8,9 +8,9 @@ var cors = require('cors')
 app.use(cors())
 app.use(express.json())
 
-const temperatureRoute = require("./routes/temperatures");
+const arduinoDataRoute = require("./routes/arduinodata");
 
-app.use("/api/arduinoData/temperatures", temperatureRoute)
+app.use("/api/arduinoData/data", arduinoDataRoute)
 
 app.get('/api/arduinoData', (req, res) => {
   res.send('Welcome Arduino measure data API')

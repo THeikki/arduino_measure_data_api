@@ -11,7 +11,7 @@ const arduinoDataSchema = new Schema({
         required: true
     },
     gas: {
-        type: Number,
+        type: String,
         required: true
     }
 })

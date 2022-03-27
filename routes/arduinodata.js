@@ -36,7 +36,7 @@ router.post("/saveArduinoData", (req, res) => {
     Delete data value
 */
 
-router.delete("/:id", (req, res) => {
+router.delete("/delete/:id", (req, res) => {
     ArduinoData.findByIdAndDelete(req.params.id, (error, result) => {
         if(result) {
             return res.status(200).json({message: "data values deleted!"})
